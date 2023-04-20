@@ -23,7 +23,7 @@ function App() {
   };
 
   const searchEvt = (e) => {
-    if (e.key === "Enter" && input != "") {
+    if (e.key === "Enter" && input !== "") {
       const url = `${api.base}weather?q=${input}&units=${api.units}&APPID=${api.key}&lang=${api.language}`;
       fetchApi(url);
     }
@@ -65,7 +65,7 @@ function App() {
   return (
     <div
       className={
-        typeof weather.main != "undefined"
+        typeof weather.main !== "undefined"
           ? weather.main.temp > 24
             ? "App-warm"
             : "App-cold"
