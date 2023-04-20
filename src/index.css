@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, Verdana, sans-serif
+}
+
+.App {
+  height: 100vh;
+  width: 100%;
+  background: url('./images/default.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: 0.4s ease-out;
+}
+
+.App-warm {
+  height: 100vh;
+  width: 100%;
+  background: url('./images/hot-weather.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: 0.4s ease-out;
+}
+
+.App-cold {
+  height: 100vh;
+  width: 100%;
+  background: url('./images/cold-weather.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: 0.4s ease-out;
+}
+
+.searchBox {
+  width: 100%;
+  margin: 0 0 75px;
+}
+
+.searchBox .searchInput {
+  display: block;
+  width: 95%;
+  padding: 15px;
+  margin-left: 40px;
+
+  background: none;
+  border: none;
+  appearance: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 15px 15px;
+  color: #000;
+  font-size: 20px;
+  transition: 0.4s ease;
+}
+
+.searchBox .searchInput:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.infoBox {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-top: 200px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.locationBox{
+  text-align: center;
+  color: #FFFFFF
+}
+
+.locationBox .Location {
+  font-size: 50px;
+  font-weight: 500;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5)
+}
+
+.locationBox .Date {
+  font-size: 35px;
+  font-weight: 300;
+  font-style: italic;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5)
+}
+
+.weatherContainer {
+  text-align: center;
+  color: #FFF;
+}
+
+.weatherContainer .Temp {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+  padding: 15px 25px;
+  font-size: 120px;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2)
+}
+
+.weatherContainer .Weather {
+  font-size: 50px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5)
+}
