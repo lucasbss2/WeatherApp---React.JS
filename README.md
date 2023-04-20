@@ -6,3 +6,7 @@ Aplicativo feito em React JavaScrip.t. O usuário informa a cidade e a API retor
 A API utilizada no desenvolvimento deste aplicativo foi a da OpenWeather: https://openweathermap.org/.
 
 The API used in the development of this application was provided by OpenWeather.
+
+# DEMO
+
+https://weather-app-reactjs-lb.netlify.app/
